@@ -1,30 +1,30 @@
-function convertirCelsiusaFarenheit(celsius){
+function convertCelsiustoFarenheit(celsius){
     return farenheit =(celsius * 9/5) + 32;
    }
-   function convertirFarenheitaCelsius(farenheit){
+   function convertFarenheittoCelsius(farenheit){
     return celsius = (farenheit - 32 )* 5/9;  
     }
 function readInput (id){
    return parseFloat(document.getElementById(id).value);
     }
-function imprimirCelsiusaF(){
+function printCelsiusaF(){
     celsius = readInput("Inputcelsius")
-    farenheit = convertirCelsiusaFarenheit(celsius);
-    imprimir (celsius,farenheit);
+    farenheit = convertCelsiustoFarenheit(celsius);
+    print(celsius,farenheit);
 }
-function imprimirFarenheitaC() {
+function printFarenheitaC() {
  farenheit = readInput("Inputfarenheit");
- celsius = convertirFarenheitaCelsius(farenheit);
-imprimir(celsius,farenheit);
+ celsius = convertFarenheittoCelsius(farenheit);
+ print(celsius,farenheit);
 }
-function imprimir(celsius, farenheit) {
-    document.getElementById("Resultado").textContent = `${farenheit.toFixed(2)}°F equivale a ${celsius.toFixed(2)}°C`;
+function print(celsius, farenheit) {
+    document.getElementById("result").textContent = `${farenheit.toFixed(2)}°F equivale a ${celsius.toFixed(2)}°C`;
 }
-document.addEventListener("DOMContentLoaded", function(){
-    let botonConvC = document.querySelector("#botonConvC")
-    botonConvC.addEventListener("click", imprimirFarenheitaC)
+    document.addEventListener("DOMContentLoaded", function(){
+    let buttonConvC = document.querySelector("#buttonConvC")
+    buttonConvC.addEventListener("click", printFarenheitaC)
   })
-  document.addEventListener("DOMContentLoaded", function(){
-    let botonConvF = document.querySelector("#botonConvF")
-    botonConvF.addEventListener("click", imprimirCelsiusaF)
+    document.addEventListener("DOMContentLoaded", function(){
+    let buttonConvF = document.querySelector("#buttonConvF")
+    buttonConvF.addEventListener("click", printCelsiusaF)
   })
