@@ -13,9 +13,9 @@ function printCelsiusaF(){
     print(celsius,farenheit);
 }
 function printFarenheitaC() {
- farenheit = readInput("Inputfarenheit");
- celsius = convertFarenheittoCelsius(farenheit);
- print(celsius,farenheit);
+    farenheit = readInput("Inputfarenheit");
+    celsius = convertFarenheittoCelsius(farenheit);
+    print(celsius,farenheit);
 }
 function print(celsius, farenheit) {
     document.getElementById("result").textContent = `${farenheit.toFixed(2)}°F equivale a ${celsius.toFixed(2)}°C`;
