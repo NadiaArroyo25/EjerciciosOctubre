@@ -27,4 +27,4 @@ function print(celsius, farenheit) {
     document.addEventListener("DOMContentLoaded", function(){
     let buttonConvF = document.querySelector("#buttonConvF")
     buttonConvF.addEventListener("click", printCelsiusaF)
-  })
+  });
