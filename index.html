@@ -4,11 +4,16 @@
 <title> Probando Varias Ideas para plasmar</title>      
 <script src="Convertidor.js"></script>
 <style>
+
+ @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Tilt+Neon&display=swap');
+
     h1{
 
     }
 body {
-    background-color: lavender;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    background-color: #BA90C6;
 }
 .container{
     display: flex;
@@ -22,6 +27,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+.tempertauras{
+    width: 100px;
+    height:100px;
+    background:hotpink;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+}
 
 </style>
 </head>
@@ -31,12 +45,12 @@ body {
 
 <div class="container">
     <h1> GRADOS CELSIUS A FAHRENHEIT</h1>
-    <label for= "Inputcelsius">Celsius:</label>
+    <label class= "tempertauras" for= "Inputcelsius">Celsius:</label>
     <input type="text"  id="Inputcelsius"/>
     <button id="buttonConvF">Convertir a Fahrenheit</button>
    
   
-    <label for = "Inputfarenheit">Farenheit:</label>
+    <label class= "tempertauras" for = "Inputfarenheit">Farenheit:</label>
     <input type="text"  id="Inputfarenheit">
     <button id="buttonConvC">Covertir a Celsius</button>
 </div>
