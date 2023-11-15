@@ -1,4 +1,4 @@
 # EjerciciosOctubre
 probandoando
-Este es el link para la pagina es un pequeño convertidor de temperatura
+this is the link for a small  temperature converter 
 https://nadiaarroyo25.github.io/EjerciciosOctubre/
